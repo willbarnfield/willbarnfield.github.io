@@ -1,0 +1,75 @@
+body {
+    background: rgb(165, 121, 157);
+    background-image: radial-gradient(rgb(239, 183, 191), rgb(200, 150, 190), rgb(165, 121, 157));
+    /* background-color: #000; */
+}
+
+body h1, body h3 {
+    text-align: center;
+}
+
+#nav-bar {
+    display: flex;
+    position: relative;
+    max-width: fit-content;
+    background-color: #FFE0FC;
+    justify-content: center;
+}
+
+.nav-bar-elt {
+    padding: 5px;
+    border: 2px solid purple;
+    border-radius: 10%;
+    margin: 1px;
+}
+
+.nav-bar-elt a {
+    text-decoration: none;
+    color: #000;
+}
+
+#figures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fig-maker {
+    padding: 3px;
+}
+
+figure {
+    position: relative;
+    max-width: 230px;
+    justify-content: center;
+    right: 20px;
+}
+
+.mode-panel {
+    display: flex;
+    position: relative;
+    left: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 230px;
+    justify-content: center;
+    gap: 5px;
+}
+
+img {
+    max-width: 230px;
+    max-height: 230px;
+}
+
+figcaption {
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    width: 230px;
+}
+
+#about-desc {
+    font-size: 20px;
+    text-align: center;
+}
