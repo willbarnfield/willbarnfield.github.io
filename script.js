@@ -23,16 +23,16 @@ const rim_massesSelector4 = document.getElementById("rim-masses-selector4");
 // Defines the rims masses selector
 for (let i = 4; i < 11; i++) {
     rim_massesSelector1.innerHTML += `
-    <option value="${i}">mass = ${i}</option>
+    <option value="${i}">masses = ${i}</option>
     `
     rim_massesSelector2.innerHTML += `
-    <option value="${i}">mass = ${i}</option>
+    <option value="${i}">masses = ${i}</option>
     `
     rim_massesSelector3.innerHTML += `
-    <option value="${i}">mass = ${i}</option>
+    <option value="${i}">masses = ${i}</option>
     `
     rim_massesSelector4.innerHTML += `
-    <option value="${i}">mass = ${i}</option>
+    <option value="${i}">masses = ${i}</option>
     `
 }
 
