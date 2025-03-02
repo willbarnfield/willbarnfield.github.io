@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		#viewer {
-			align-content: center;
-			width: 500px;
-			height: 500px;
-			margin: auto;
-			padding-top: 50px;
-		}
-		
-		div {
-			justify-content: center;
-			margin: auto;
-		}
-	</style>
+	<title>William Barnfield's Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+	<header>
+		<h1>William Barnfield</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Welcome to my portfolio page! I am a passionate developer and mathematician with experience in PDEs and 
+				numerical methods, I am currently in my final year of an MMath at the University of Liverpool. I am looking
+				to either get into a PhD or a job in the field of numerical methods or software development. I have experience in
+				Python and MATLAB. I also have some experience in web development gained through a couple of online courses.
+			</p>
+			<p>When I'm not coding, I enjoy doing sports especially running and squash.</p>
+			<p>The goal of this page is to showcase some of my projects and hopefully get you excited about them too!</p>
+			<p>Feel free to check out my projects below or get in touch!</p>
+		</section>
 
-<!-- Use it like any other HTML element -->
- <div>
-	<model-viewer  id="viewer" src="unitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
-	<model-viewer  id="viewer" src="full_structureunitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
- </div>
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project">
+				<h3>Vibrations of an N-gon Mass-Spring System (and Further Geometry)</h3>
+				<p>This is the project I completed in my third year, where I looked at the time-harmonic vibrations of various
+					mass-spring systems. This resulted in some quite beautful animations of the vibrations of the systems. I also
+					extended the simple N-gon geometry moving into more complex ones such as that with concentic circles. A MATLAB
+					app was also developed to allow users to experiment with their own geometries in this framework, and an object 
+					oriented approach was leveraged, allowing the easy creation and removing of additional masses. The project was 
+					very well received by my supervisor and I was awarded the top mark in the year for it. It was also entered into
+					The Institute of Mathematics and its Applications (IMA) National Best Maths Project competition 2025, where it was 
+					awarded first place, resulting in a Mathematics Today article being written about it. The project can be found on my
+					GitHub page.
+				</p>
+				<a href="https://github.com/willbarnfield/project1" target="_blank">View on GitHub</a>
+			</div>
+			<div class="project">
+				<h3>A Spectral Problem Applied to a Chiral Multi-Structure</h3>
+				<p>This is the project I am currently working on, where we are utilising gyroscopes to model the Coriolis effect experienced
+					due to the rotation on Earth. This is a very interesting project as it could have some interesting geophysical applications, 
+					and due to the symmetries of the system, we can formulate it fully analytically, rather than relying on complex meshing. 
+					We are currently in the process of writing up the results and hope to submit it to a journal in the near future. The project
+					is written in MATLAB. Some nice 3D models accompanying this project can be found <a href="threedmodels.html">here</a>.
+				</p>
+				<a href="https://github.com/willbarnfield/project2" target="_blank">View on GitHub</a>
+			</div>
+			<div class="project">
+				<a href="stopwatch.html">Stopwatch</a>
+			</div>
+		</section>
 
-	
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>If you would like to get in touch, please email me at <a
+					href="mailto:williambarnfield1@outlook.com">williambarnfield1@outlook.com</a>.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Made by William Barnfield, with a little help from Copilot 😉</p>
+	</footer>
 </body>
+
 </html>
