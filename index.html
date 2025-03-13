@@ -4,29 +4,93 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<style>
-		#viewer {
-			align-content: center;
-			width: 500px;
-			height: 500px;
-			margin: auto;
-			padding-top: 50px;
-		}
-		
-		div {
-			justify-content: center;
-			margin: auto;
-		}
-	</style>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+	  <nav class="navbar navbar-expand-lg bg-body-primary">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">WheelMaker</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="3dmodels.html">Multi-Structure</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 
-<!-- Use it like any other HTML element -->
- <div>
-	<model-viewer  id="viewer" src="unitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
-	<model-viewer  id="viewer" src="full_structureunitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
- </div>
+	  <main>
+		<div class="row align-items-center justify-content-center">
+		  <div class="col-md-4">
+			<!-- <img src="assets/imgs/headshot-square.jpg" class="rounded img-fluid" alt="Headshot of Daniel Colquitt"> -->
+		  </div>
+		  <div class="col-md-8 my-3">
+			<h2><i class="fa-solid fa-hand-spock"></i> A little bit about me...</h2>
+			<p class="lead">I am a final year MMath (master of mathematics) student at the University of Liverpool. I am an applied mathematician with interests in waves, and computational methods. You can read more about the things I'm doing below</p>
+		  </div>
+		</div>
+  
+		<hr class="col-12 col-md-12">
+  
+		<div class="row g-5">
+		  <div class="col-md-6">
+			<h2><i class="fa-solid fa-lightbulb"></i> Research</h2>
+			<p>I like to say that I am a very applied mathematician, which essentially means that I look at physical problems from the point of view of mathematics. I use and develop new mathematical techniques for the study of wave propagation, localisation and fracture in complicated materials. Although I primarily work with mechanical waves, I also have an interest in electromagnetic and acoustic waves, as well as fluid mechanics.</p>
+			<p>I am currently working in several broad areas including cloaking (making things invisible), localisation (concentrating waves and energy in a finite area), fracture (investigating how complex materials break and fail), homogenisation (approximating complicated materials and phenomena by simpler ones), controlling waves, and mode-conversion (changing one type of wave to another). You can read more about my work in my papers or see more about it in my talks.</p>
+		  </div>
+  
+		  <div class="col-md-6">
+			<h2><i class="fa-solid fa-person-chalkboard"></i> Teaching</h2>
+			<p>I am not currently delivering any taught modules, although I do hold first year tutorials for MATH103 &mdash; Introduction to Linear Algebra. I usually offer a couple of <a href="/projects/ugpgt">undergraduate and taught-postgraduate research projects</a> each year. I will not normally supervise more than two projects each academic year, so it's best to <a href="/contact">get in touch</a> early if you'd like to do a project with me. I am currently supervising an MMATH project on <a href="/projects/ugpgt#uwap">underwater acoustics</a>. If you are interested in doing a PhD with me, you should <a href="/contact">drop me an email</a> in the first instance.</p>
+			<p>Usually, the fastest way to reach me with short questions is to <a href="/cdn-cgi/l/email-protection#09797c6b65606a496a6665787c607d7d27717073">drop me an email</a> or <a href="https://chat.danielcolquitt.com">chat with me on Microsoft Teams</a>. For longer questions, please <a href="" onclick="if (!window.__cfRLUnblockHandlers) return false; Calendly.initPopupWidget({url: 'https://calendly.com/danielcolquitt?hide_landing_page_details=1'});return false;" data-cf-modified-5127e7a54f17ee8694d0e70e-="">book a meeting</a>.</p>
+		  </div>
+		</div>
+
+		<div class="row g-5 mt-3 mt-md-0">
+		  <div class="col-md-6">
+			<h2><i class="fa-solid fa-file-lines"></i>Publications</h2>
+  
+			<!-- <p style="text-align: justify !important;"><i class="fa-solid fa-lock-open"></i>
+			  Edge R, Paul E, Madine KH, Colquitt DJ, Starkey TA, Chaplain GJ. 2025
+			  Discrete Euler-Bernoulli Beam Lattices with Beyond Nearest Connections
+			  <span style="font-style: italic">New J Phys</span>, <span style="font-weight:bold;">27</span> 023007.
+			  (doi: <a href="https://doi.org/10.1088/1367-2630/adaf50">10.1088/1367-2630/adaf50</a>)
+			</p> -->
+  
+			<p style="text-align: justify !important;"><i class="fa-solid fa-lock-open"></i>
+			  Barnfield W, Allison F, 2024
+			  Illuminating Eigenmodes: Mass-Spring Systems
+			  <span style="font-style: italic">Mathematics Today</span>, <span style="font-weight: bold;">Decemember 2024</span>
+			</p>
+			
+				<p><a href="/publications" class="btn btn-primary btn-sm">See more publications</a></p>
+			  </div>
+  
+			  <div class="col-md-6">
+				<h2><i class="fa-solid fa-school"></i> Office hours</h2>
+				<p>I do not maintain standing office hours, but I am more than happy to see students at any time that I am available.</p>
+				<p>Please <a href="/cdn-cgi/l/email-protection#395d175a5655484c504d4d7955504f5c4b4956565517585a174c52065a5a044a5c5c5d537955504f5c4b4956565517585a174c52">drop me an email</a>, with my PA (<a href="https://www.liverpool.ac.uk/physical-sciences/staff/joanna-seed/">Mrs Joanna Seed</a>) in cc.</p>
+			  </div>
+			</div>
+			
+		  </main>
 
 	
 </body>
