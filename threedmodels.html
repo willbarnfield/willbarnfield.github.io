@@ -12,6 +12,13 @@
             height: 400px;
             margin: 20px auto;
         }
+
+        video {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            justify-content: center;
+        }
     </style>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
@@ -29,9 +36,21 @@
     <main>
         <section>
             <h2>3D Models</h2>
+            <p>I've been experiementing with different colour choices, so I'll just show a whole range of different models here</p>
             <div>
-                <model-viewer id="viewer" src="unitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
-                <!-- <model-viewer id="viewer" src="full_structureunitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer> -->
+                 <model-viewer id="viewer" src="models/unitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
+                <!-- <model-viewer id="viewer" src="models/full_structureunitcell.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer> -->
+                <!-- <model-viewer id="viewer" src="models/ms.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer> -->
+                <model-viewer id="viewer" src="models/ms copy.gltf" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer>
+                <model-viewer id="viewer" src="models/icos.gltf" shadow-intensity="0" camera-controls touch-action="pan-y"></model-viewer>
+                <model-viewer id="viewer" src="models/icos_tetras.gltf" shadow-intensity="0" camera-controls touch-action="pan-y"></model-viewer> 
+                <!-- <model-viewer id="viewer" src="models/ms_animation1.glb" shadow-intensity="0.5" camera-controls touch-action="pan-y"></model-viewer> -->
+            </div>
+            <div>
+                <video controls>
+                    <source src="public/videos/0001-0100.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     </main>
